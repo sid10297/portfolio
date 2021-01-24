@@ -1,16 +1,22 @@
+/*********************************** Fonts ****************************************/
+
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap");
 
 @import url("https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap");
 
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap");
-html {
-  scroll-behavior: smooth;
-}
+
+/*********************************** Default Settings ******************************/
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+/************************************** Tags ****************************************/
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
@@ -21,31 +27,6 @@ body {
     ),
     #ffeaee;
   background: #d9ecf2;
-}
-
-.navbar a {
-  text-decoration: none;
-  color: #9ad3bc;
-  font-size: 1.5rem;
-  font-family: "Montserrat", sans-serif;
-}
-
-.navbar a:hover {
-  transform: scale(0.95);
-  transition: 0.1s;
-  border-bottom: 5px solid #16a596;
-}
-
-.headingText {
-  color: #16a596;
-  font-family: "Great Vibes", cursive;
-}
-
-.headingText {
-  padding: 120px 0 20px 0;
-  margin: 10px auto;
-  font-size: 6em;
-  text-align: center;
 }
 
 h1 {
@@ -59,6 +40,12 @@ p {
   color: #9ad3bc;
   font-family: "Montserrat", sans-serif;
 }
+
+a {
+  text-decoration: none;
+}
+
+/*************************************** Navbar **************************************/
 
 nav {
   display: flex;
@@ -81,6 +68,21 @@ nav {
   padding: 10px;
 }
 
+.navbar a {
+  text-decoration: none;
+  color: #9ad3bc;
+  font-size: 1.5rem;
+  font-family: "Montserrat", sans-serif;
+}
+
+.navbar a:hover {
+  transform: scale(0.95);
+  transition: 0.1s;
+  border-bottom: 5px solid #16a596;
+}
+
+/******************************************** Intro Page ********************************/
+
 .hero {
   display: flex;
   align-items: center;
@@ -88,52 +90,57 @@ nav {
 }
 
 .wrapper {
-  display: block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.intro {
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+  height: 600px;
+  width: 500px;
   margin: 0 auto;
+}
+
+.myImage {
+  margin: 0 auto;
+}
+
+.myImage img {
+  border-radius: 20px;
+  -webkit-box-shadow: 1px 2px 20px -1px rgba(46, 32, 46, 0.76);
+  -moz-box-shadow: 1px 2px 20px -1px rgba(46, 32, 46, 0.76);
+  box-shadow: 1px 2px 20px -1px rgba(46, 32, 46, 0.76);
+  width: 200px;
+  height: 200px;
+  margin: 40px auto;
+}
+
+.headingText {
+  color: #16a596;
+  font-family: "Great Vibes", cursive;
+  margin: 10px auto;
+  font-size: 6em;
+  text-align: center;
 }
 
 .subText {
   text-align: center;
   font-size: 2rem;
+  margin: 0 auto;
+  height: 55px;
 }
 
-footer {
-  display: flex;
-  align-items: center;
-  font-size: 20px;
-}
+/************************************** Skills Page Section *****************************/
 
-.socialLinks {
-  margin: 2px auto 10px auto;
-}
-
-.copyright {
-  /* height: auto;
-  display: flex;
-  align-items: center;
-  justify-content: center; */
-  margin-bottom: auto;
-  margin-right: auto;
-  font-size: 20px;
-  letter-spacing: 3px;
-}
-
-.hover1:hover,
-.hover2:hover,
-.hover3:hover,
-.hover4:hover {
-  cursor: pointer;
-  transform: scale(0.9);
-}
-
-.fab {
-  color: #16a596;
-  padding: 0 2px;
-  margin: 0 10px;
-}
-
-a {
-  text-decoration: none;
+.heading {
+  font-family: "Lato", sans-serif;
+  color: #9ad3bc;
+  border-bottom: 5px solid #9ad3bc;
+  text-transform: uppercase;
+  font-size: 3rem;
+  margin-top: -50px;
 }
 
 .skillSection {
@@ -150,7 +157,7 @@ a {
   box-shadow: 1px 2px 20px -1px rgba(46, 32, 46, 0.76);
 }
 
-img {
+.skillImage1 img {
   background-size: cover;
   width: 200px;
   height: 200px;
@@ -159,7 +166,7 @@ img {
   transition: 0.5s ease;
 }
 
-img:hover {
+.skillImage1 img:hover {
   transform: scale(0.95);
   transition: 0.3s ease-in-out all;
   -webkit-box-shadow: 1px 2px 20px -1px rgba(46, 32, 46, 0.76);
@@ -167,18 +174,11 @@ img:hover {
   box-shadow: 1px 2px 20px -1px rgba(46, 32, 46, 0.76);
 }
 
-.heading {
-  font-family: "Lato", sans-serif;
-  color: #9ad3bc;
-  border-bottom: 5px solid #9ad3bc;
-  text-transform: uppercase;
-  font-size: 3rem;
-  margin-top: -50px;
-}
-
 .cssImage {
   background-color: #0278ae;
 }
+
+/********************************* Contact Form Page Section *****************************/
 
 .contactMe {
   height: 550px;
@@ -190,6 +190,10 @@ img:hover {
   -webkit-box-shadow: 1px 2px 20px -1px rgba(46, 32, 46, 0.76);
   -moz-box-shadow: 1px 2px 20px -1px rgba(46, 32, 46, 0.76);
   box-shadow: 1px 2px 20px -1px rgba(46, 32, 46, 0.76);
+}
+
+.contactTitle {
+  border-bottom: 5px solid #9ad3bc;
 }
 
 .contactHeading {
@@ -229,7 +233,7 @@ img:hover {
 }
 
 .form input[type="submit"] {
-  width: 25%;
+  width: 35%;
   margin: 35px auto;
   height: 70px;
   color: #16a596;
@@ -261,29 +265,37 @@ img:hover {
   box-shadow: 1px 2px 20px -1px rgba(46, 32, 46, 0.76);
 }
 
-.wrapper {
+/****************************************** Footer ****************************************/
+
+footer {
   display: flex;
   align-items: center;
-  justify-content: center;
+  font-size: 20px;
 }
 
-.myImage img {
-  border-radius: 100%;
-  margin-left: 60px;
-  margin-bottom: 60px;
-  -webkit-box-shadow: 1px 2px 20px -1px rgba(46, 32, 46, 0.76);
-  -moz-box-shadow: 1px 2px 20px -1px rgba(46, 32, 46, 0.76);
-  box-shadow: 1px 2px 20px -1px rgba(46, 32, 46, 0.76);
+.socialLinks {
+  margin: 2px auto 10px auto;
 }
 
-.myImage {
-  margin-top: 10px;
+.copyright {
+  margin-bottom: auto;
+  margin-right: auto;
+  font-size: 20px;
+  letter-spacing: 3px;
 }
 
-.intro {
-  margin-bottom: 80px;
+.hover1:hover,
+.hover2:hover,
+.hover3:hover,
+.hover4:hover {
+  cursor: pointer;
+  transform: scale(0.9);
 }
 
-.contactTitle {
-  border-bottom: 5px solid #9ad3bc;
+.fab {
+  color: #16a596;
+  padding: 0 2px;
+  margin: 0 10px;
 }
+
+/*************************************** The End *****************************************/
