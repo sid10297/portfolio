@@ -362,7 +362,7 @@ footer {
 
 @media screen and (max-width: 640px) {
   .form input[type="submit"] {
-    width: 35%;
+    width: 50%;
     margin: 35px auto;
     height: 70px;
   }
@@ -379,13 +379,13 @@ footer {
     width: 80%;
   }
   .form input[type="submit"] {
-    width: 35%;
+    width: 60%;
     margin: 35px auto;
     height: 70px;
   }
-  @media screen and (min-width: 580px) {
+  @media screen and (min-width: 320px) {
     .form input[type="submit"] {
-      width: 35%;
+      width: 80%;
       margin: 35px auto;
       height: 70px;
     }
