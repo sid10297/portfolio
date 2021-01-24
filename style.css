@@ -48,8 +48,8 @@ a {
 /*************************************** Navbar **************************************/
 
 nav {
+  width: 100%;
   display: flex;
-  width: 12;
   justify-content: space-evenly;
   align-items: center;
   height: 80px;
@@ -59,7 +59,6 @@ nav {
       rgba(218, 205, 255, 0) 61.37%
     ),
     #ffeaee;
-  width: 100vw;
 }
 
 .navbar {
@@ -99,7 +98,7 @@ nav {
   display: grid;
   grid-template-rows: 1fr 1fr 1fr;
   height: 600px;
-  width: 500px;
+  width: 90%;
   margin: 0 auto;
 }
 
@@ -157,7 +156,7 @@ nav {
   box-shadow: 1px 2px 20px -1px rgba(46, 32, 46, 0.76);
 }
 
-.skillImage1 img {
+.skillImages img {
   background-size: cover;
   width: 200px;
   height: 200px;
@@ -166,7 +165,7 @@ nav {
   transition: 0.5s ease;
 }
 
-.skillImage1 img:hover {
+.skillImages img:hover {
   transform: scale(0.95);
   transition: 0.3s ease-in-out all;
   -webkit-box-shadow: 1px 2px 20px -1px rgba(46, 32, 46, 0.76);
@@ -183,8 +182,8 @@ nav {
 .contactMe {
   height: 550px;
   background: #16a596;
-  max-width: 600px;
-  width: 100%;
+  width: 50%;
+  max-width: 100%;
   margin: 100px auto;
   border-radius: 20px;
   -webkit-box-shadow: 1px 2px 20px -1px rgba(46, 32, 46, 0.76);
@@ -298,4 +297,97 @@ footer {
   margin: 0 10px;
 }
 
-/*************************************** The End *****************************************/
+/*************************************** Media Queries ***********************************/
+
+@media screen and (max-width: 1082px) {
+  .skillImages {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+
+  .contactMe {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 1070px) {
+  .skillImages {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+
+  .skillSection {
+    justify-content: center;
+    align-items: center;
+  }
+
+  .form {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 970px) {
+  .contactMe {
+    width: 60%;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .contactMe {
+    width: 60%;
+  }
+}
+
+@media screen and (max-width: 720px) {
+  .contactMe {
+    width: 60%;
+  }
+
+  .form input[type="submit"] {
+    width: 35%;
+    margin: 35px auto;
+    height: 70px;
+  }
+
+  footer {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+  }
+  .copyright {
+    margin: 10px auto;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .form input[type="submit"] {
+    width: 35%;
+    margin: 35px auto;
+    height: 70px;
+  }
+}
+
+@media screen and (max-width: 570px) {
+  .skillImages {
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr;
+  }
+
+  .contactMe {
+    width: 80%;
+  }
+  .form input[type="submit"] {
+    width: 35%;
+    margin: 35px auto;
+    height: 70px;
+  }
+  @media screen and (min-width: 580px) {
+    .form input[type="submit"] {
+      width: 35%;
+      margin: 35px auto;
+      height: 70px;
+    }
+  }
+}
