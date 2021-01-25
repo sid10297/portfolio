@@ -286,7 +286,8 @@ footer {
   font-size: 20px;
   letter-spacing: 3px;
 }
-.hover0:hover .hover1:hover,
+.hover0:hover,
+.hover1:hover,
 .hover2:hover,
 .hover3:hover,
 .hover4:hover {
