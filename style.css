@@ -173,6 +173,10 @@ nav {
   box-shadow: 1px 2px 20px -1px rgba(46, 32, 46, 0.76);
 }
 
+.htmlImage {
+  background-color: #f12a2ade;
+}
+
 .cssImage {
   background-color: #0278ae;
 }
@@ -449,6 +453,39 @@ footer {
   }
 }
 
+@media (max-width: 636px) {
+  .skillSection {
+    padding-top: 60px;
+    margin: 0 auto;
+    width: 90%;
+  }
+  .skillImages {
+    margin: 20px 40px;
+    margin-left: auto;
+    margin-right: auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+  }
+  .skillImages img {
+    margin: 40px;
+  }
+
+  .contactMe {
+    padding: 20px;
+    width: 90%;
+  }
+
+  .form input[type="submit"] {
+    width: 50%;
+  }
+  footer {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+  }
+}
+
 @media (max-width: 400px) {
   .heading {
     display: inline-block;
@@ -483,16 +520,14 @@ footer {
   }
 
   .form input {
-    margin-left: auto;
-    margin-right: auto;
     width: 100%;
     padding: 0;
-    margin: 10px;
+    margin: 10px auto;
   }
 
   .form input[type="submit"] {
     width: 100%;
-    margin: 0 auto;
+    margin: 10px auto;
   }
 
   footer {
