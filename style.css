@@ -9,7 +9,7 @@
 /*********************************** Default Settings ******************************/
 
 * {
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
   box-sizing: border-box;
 }
@@ -298,96 +298,217 @@ footer {
 }
 
 /*************************************** Media Queries ***********************************/
-
-@media screen and (max-width: 1082px) {
-  .skillImages {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+@media (max-width: 1024px) {
+  .contactMe {
+    padding: 20px;
+    width: 70%;
+    height: auto;
   }
 
-  .contactMe {
-    width: 50%;
+  .form input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+  }
+
+  .form {
+    padding: 10px 20px;
   }
 }
 
-@media screen and (max-width: 1070px) {
+@media (max-width: 1080px) {
+  .skillSection {
+    padding-top: 60px;
+    margin: 0 auto;
+    width: 90%;
+  }
   .skillImages {
+    margin: 0 auto;
+    margin-left: auto;
+    margin-right: auto;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
   }
 
-  .skillSection {
-    justify-content: center;
-    align-items: center;
+  .skillImages img {
+    margin: 40px 100px;
+  }
+
+  .contactMe {
+    padding: 20px;
+    width: 70%;
+    height: auto;
+  }
+
+  .form input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
   }
 
   .form {
+    padding: 10px 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .skillSection {
+    padding-top: 60px;
+    margin: 0 auto;
+    width: 90%;
+  }
+  .skillImages {
+    margin: 0;
+    margin-left: auto;
+    margin-right: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .skillImages img {
+    margin: 40px;
+  }
+
+  .contactMe {
+    padding: 20px;
+    width: 70%;
+  }
+
+  .form input {
     width: 100%;
+    padding: 10px;
+    margin: 10px;
+  }
+}
+@media (max-width: 800px) {
+  .skillSection {
+    padding-top: 60px;
+    margin: 0 auto;
+    width: 90%;
+  }
+  .skillImages {
+    margin: 0;
+    margin-left: auto;
+    margin-right: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .skillImages img {
+    margin: 40px;
+  }
+
+  .contactMe {
+    padding: 20px;
+    width: 70%;
+    height: auto;
+  }
+
+  .form input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+  }
+
+  .form {
+    padding: 10px 20px;
   }
 }
 
-@media screen and (max-width: 970px) {
-  .contactMe {
-    width: 60%;
+@media (max-width: 500px) {
+  .skillSection {
+    padding-top: 60px;
+    margin: 0 auto;
+    width: 90%;
   }
-}
-
-@media screen and (max-width: 850px) {
-  .contactMe {
-    width: 60%;
+  .skillImages {
+    margin: 20px 40px;
+    margin-left: auto;
+    margin-right: auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
   }
-}
+  .skillImages img {
+    margin: 40px;
+  }
 
-@media screen and (max-width: 720px) {
   .contactMe {
-    width: 60%;
+    padding: 20px;
+    width: 90%;
   }
 
   .form input[type="submit"] {
-    width: 35%;
-    margin: 35px auto;
-    height: 70px;
+    width: 50%;
+  }
+  footer {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+  }
+}
+
+@media (max-width: 400px) {
+  .heading {
+    display: inline-block;
+    margin: 0 auto;
+  }
+  .myImage img {
+    margin: 0 auto;
+  }
+  .skillSection {
+    padding: 0;
+    width: 90%;
+  }
+  .skillImages {
+    margin: 40px 20px 20px 20px;
+    margin-left: auto;
+    margin-right: auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+  }
+  .skillImages img {
+    margin: 40px;
+  }
+
+  .contactMe {
+    padding: 0;
+    width: 90%;
+    height: auto;
+    max-width: 100%;
+    margin: 40px auto;
+    border-radius: 20px;
+  }
+
+  .form input {
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    padding: 0;
+    margin: 10px;
+  }
+
+  .form input[type="submit"] {
+    width: 100%;
+    margin: 0 auto;
   }
 
   footer {
     display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
   }
-  .copyright {
-    margin: 10px auto;
-  }
-}
-
-@media screen and (max-width: 640px) {
-  .form input[type="submit"] {
-    width: 50%;
-    margin: 35px auto;
-    height: 70px;
-  }
-}
-
-@media screen and (max-width: 570px) {
-  .skillImages {
-    display: grid;
-    grid-template-rows: 1fr;
-    grid-template-columns: 1fr;
-  }
-
-  .contactMe {
-    width: 80%;
-  }
-  .form input[type="submit"] {
-    width: 60%;
-    margin: 35px auto;
-    height: 70px;
-  }
-  @media screen and (min-width: 320px) {
-    .form input[type="submit"] {
-      width: 80%;
-      margin: 35px auto;
-      height: 70px;
+  @media (max-width: 360px) {
+    footer {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr;
+    }
+    .footer {
+      font-size: 10px;
+      margin: 0 auto;
     }
   }
 }
