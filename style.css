@@ -184,7 +184,7 @@ nav {
 /********************************* Contact Form Page Section *****************************/
 
 .contactMe {
-  height: 550px;
+  height: auto;
   background: #16a596;
   width: 50%;
   max-width: 100%;
@@ -220,10 +220,7 @@ nav {
   height: 60px;
   border: none;
   border-radius: 20px;
-  justify-content: center;
-  align-items: center;
   font-family: "Lato", sans-serif;
-  text-transform: uppercase;
   outline: none;
   width: 100%;
   background-color: #d9ecf2;
@@ -235,16 +232,18 @@ nav {
   font-family: "Lato", sans-serif;
 }
 
-.form input[type="submit"] {
+.btn {
   width: 35%;
   margin: 35px auto;
   height: 70px;
   color: #16a596;
   font-size: 1.2rem;
   background-color: #9ad3bc;
+  border-radius: 20px;
+  border: none;
 }
 
-.form input[type="submit"]:hover {
+.btn:hover {
   -webkit-box-shadow: 1px 2px 20px -1px rgba(46, 32, 46, 0.76);
   -moz-box-shadow: 1px 2px 20px -1px rgba(46, 32, 46, 0.76);
   box-shadow: 1px 2px 20px -1px rgba(46, 32, 46, 0.76);
@@ -263,6 +262,38 @@ nav {
 .form [type="text"]:focus,
 [type="email"]:focus,
 [type="tel"]:focus {
+  -webkit-box-shadow: 1px 2px 20px -1px rgba(46, 32, 46, 0.76);
+  -moz-box-shadow: 1px 2px 20px -1px rgba(46, 32, 46, 0.76);
+  box-shadow: 1px 2px 20px -1px rgba(46, 32, 46, 0.76);
+}
+
+.form textarea {
+  margin: 20px auto;
+  height: 100px;
+  border: none;
+  border-radius: 10px;
+  font-size: 1.2rem;
+  color: #16a596;
+  font-family: "Lato", sans-serif;
+  outline: none;
+  width: 100%;
+  background-color: #d9ecf2;
+  font-size: 1.2rem;
+  color: #16a596;
+  letter-spacing: 1px;
+  line-height: 1.5;
+  padding: 10px;
+}
+
+.form textarea::placeholder {
+  text-align: center;
+  color: #9ad3bc77;
+  font-size: 1.2rem;
+  font-family: "Lato", sans-serif;
+  line-height: 1.5;
+}
+
+.form textarea:focus {
   -webkit-box-shadow: 1px 2px 20px -1px rgba(46, 32, 46, 0.76);
   -moz-box-shadow: 1px 2px 20px -1px rgba(46, 32, 46, 0.76);
   box-shadow: 1px 2px 20px -1px rgba(46, 32, 46, 0.76);
