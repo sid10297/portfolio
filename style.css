@@ -283,6 +283,7 @@ nav {
   letter-spacing: 1px;
   line-height: 1.5;
   padding: 10px;
+  resize: vertical;
 }
 
 .form textarea::placeholder {
