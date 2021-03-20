@@ -45,18 +45,38 @@
       <h1 class="contactHeading">
         <span class="contactTitle">Contact Me..</span>
       </h1>
-      <form class="form" action="">
-        <input type="text" placeholder="Name" name="" id="" required />
-        <input type="email" placeholder="Email" name="" id="" required />
-        <input type="tel" placeholder="Phone" required />
+      <form class="form" id="contact-form">
+        <label for="name"></label>
+        <input type="text" placeholder="Name" name="name" id="name" required />
+        <label for="email"></label>
+        <input
+          type="email"
+          placeholder="Email"
+          name="email"
+          id="email"
+          required
+        />
+        <label for="phone"></label>
+        <input
+          type="tel"
+          placeholder="Phone"
+          name="phone"
+          id="phone"
+          required
+        />
+        <label for="message"></label>
         <textarea
-          name=""
-          id=""
+          name="message"
+          id="message"
           cols="30"
           rows="10"
           placeholder="Message..."
+          required
         ></textarea>
-        <button class="btn">Submit</button>
+        <div class="alert">
+          <h3>Your Message has been sent successfuly!</h3>
+        </div>
+        <button class="btn" id="button">Submit</button>
       </form>
     </section>
     <footer>
@@ -83,6 +103,8 @@
         <p class="footer">&copy; SIDDHARTH BHAIJI, 2021</p>
       </div>
     </footer>
+    <script src="https://www.gstatic.com/firebasejs/8.3.1/firebase.js"></script>
+
     <script src="./main.js"></script>
   </body>
 </html>

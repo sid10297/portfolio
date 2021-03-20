@@ -32,7 +32,7 @@ body {
 
 .dark-mode {
   background-color: black;
-  transition: ease-in 0.5s;
+  transition: ease-in-out 0.5s;
 }
 
 header {
@@ -209,6 +209,17 @@ nav {
 
 /********************************* Contact Form Page Section *****************************/
 
+.alert {
+  color: #16a596;
+  background-color: #d9ecf2;
+  margin: 20px auto;
+  padding: 1rem;
+  border-radius: 20px;
+  width: 100%;
+  text-align: center;
+  display: none;
+}
+
 .contactMe {
   height: auto;
   background: #16a596;
@@ -271,6 +282,7 @@ nav {
   background-color: #9ad3bc;
   border-radius: 20px;
   border: none;
+  outline: none;
 }
 
 .btn:hover {
@@ -298,7 +310,7 @@ nav {
 }
 
 .form textarea {
-  text-transform: capitalize;
+  text-transform: none;
   margin: 20px auto;
   height: 100px;
   border: none;
