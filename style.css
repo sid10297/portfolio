@@ -133,13 +133,14 @@ nav {
 }
 
 .myImage img {
-  border-radius: 20px;
+  border-radius: 100%;
   -webkit-box-shadow: 1px 2px 20px -1px rgba(46, 32, 46, 0.76);
   -moz-box-shadow: 1px 2px 20px -1px rgba(46, 32, 46, 0.76);
   box-shadow: 1px 2px 20px -1px rgba(46, 32, 46, 0.76);
   width: 200px;
   height: 200px;
   margin: 40px auto;
+  object-fit: cover;
 }
 
 .headingText {
